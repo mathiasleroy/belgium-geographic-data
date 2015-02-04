@@ -1,16 +1,9 @@
 # Belgium map datasets
 
-## be-provinces
-Geojson map of belgium at provincial levels.  
-Format: geojson  
-Source: http://code.highcharts.com/mapdata/1.0.0/countries/be/be-all.geo.json  
-and converted in http://converter.mygeodata.eu/  
 
 ## be-provinces-unk
-be-provinces with additionnal UNK rectangle.  
+be-provinces with UNK rectangle.  
 Format: geojson  
-Source: be-provinces  
-and manually added a rectangle with http://geojson.io/  
 
 
 ## be-dictionary
