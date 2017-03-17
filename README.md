@@ -1,21 +1,27 @@
-# Belgium map datasets
+# Files
 
-
-## be-provinces-unk
-be-provinces with UNK rectangle.  
+## be-provinces-unk.geo.json
+Is a geojson map for plotting Provinces.  
+It contains also an "UNK" (unkown) rectangle.  
 Format: geojson  
+Source: NA  
 
-
-## be-dictionary
-Dataset for recoding belgian divisions levels.  
-Format: csv  
-Source:  
+## be-dictionary.csv
+Is a dataset containing every level of Belgium divisions, usefull for recoding belgian divisions levels.  
 Variables: StatisticalSector,NIS9,PostCode,Municipality,NIS5,Arrondissement,NIS2,NUTS3,Province,NIS1_5,NUTS2,Region,NIS1,NUTS1  
+Format: csv  
+Source: NA  
+
+## PostalCodesCoordinates.js
+Is a dataset mapping every postal code to it's coordinates  
+Source: Google Maps geocoding API  
+Format: JavaScript  
 
 
---------------
+----------------
 
-# Divisions, Variables and Codes
+# Explanation of Divisions, Variables and Codes
+
 ## 3 Regions
 Codes : NUTS1
 
