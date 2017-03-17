@@ -4,18 +4,24 @@
 Is a geojson map for plotting Provinces.  
 It contains also an "UNK" (unkown) rectangle.  
 Format: geojson  
-Source: NA  
 
 ## be-dictionary.csv
 Is a dataset containing every level of Belgium divisions, usefull for recoding belgian divisions levels.  
 Variables: StatisticalSector,NIS9,PostCode,Municipality,NIS5,Arrondissement,NIS2,NUTS3,Province,NIS1_5,NUTS2,Region,NIS1,NUTS1  
 Format: csv  
-Source: NA  
 
 ## PostalCodesCoordinates.js
 Is a dataset mapping every postal code to it's coordinates  
 Source: Google Maps geocoding API  
 Format: JavaScript  
+Geographic coordinate system : WGS  
+
+
+## be-contour.csv
+Dataset containing coordinates of the contour of Belgium  
+Format: CSV  
+Geographic coordinate system : Lambert Belge  
+
 
 
 ----------------
