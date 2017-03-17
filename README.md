@@ -14,13 +14,13 @@ Format: csv
 Is a dataset mapping every postal code to it's coordinates  
 Source: Google Maps geocoding API  
 Format: JavaScript  
-Geographic coordinate system : WGS  
+Geographic coordinate system: WGS  
 
-
-## be-contour.csv
+## be_contour_lowdensity_lambert.js
 Dataset containing coordinates of the contour of Belgium  
-Format: CSV  
-Geographic coordinate system : Lambert Belge  
+Format: JavaScript  
+Geographic coordinate system: Belgian Lambert 72  
+Density: 729 points
 
 
 
