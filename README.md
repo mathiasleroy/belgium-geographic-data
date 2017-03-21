@@ -14,7 +14,7 @@ Format: csv
 Is a dataset mapping every postal code to it's coordinates  
 Source: Google Maps geocoding API  
 Format: JavaScript  
-Geographic coordinate system: WGS  
+Geographic coordinate system: latitude & longitude  
 
 ## be_contour_lowdensity_lambert.js
 Dataset containing coordinates of the contour of Belgium  
