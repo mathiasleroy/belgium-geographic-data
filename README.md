@@ -1,27 +1,54 @@
+
 # Files
+  
 
-## be-provinces-unk.geo.json
-Is a geojson map for plotting Provinces.  
-It contains also an "UNK" (unkown) rectangle.  
-Format: geojson  
-
-## be-dictionary.csv
+## dist/metadata/be-dictionary.csv
 Is a dataset containing every level of Belgium divisions, usefull for recoding belgian divisions levels.  
 Variables: StatisticalSector,NIS9,PostCode,Municipality,NIS5,Arrondissement,NIS2,NUTS3,Province,NIS1_5,NUTS2,Region,NIS1,NUTS1  
 Format: csv  
 
-## PostalCodesCoordinates.js
+
+## dist/points/postal-codes.WGS84.js
 Is a dataset mapping every postal code to it's coordinates  
 Source: Google Maps geocoding API  
 Format: JavaScript  
 Geographic coordinate system: latitude & longitude  
 
-## be_contour_lowdensity_lambert.js
+
+## dist/polygons/be-provinces-unk.geo.json
+Is a geojson map for plotting Provinces.  
+It contains also an "UNK" (unkown) rectangle.  
+Format: geojson
+
+## dist/polygons/be_contour_lowdensity_lambert.js
 Dataset containing coordinates of the contour of Belgium  
 Format: JavaScript  
 Geographic coordinate system: Belgian Lambert 72  
 Density: 729 points
 
+## dist/polygons/be-municip-lamberts.geo.json
+Src: sh_statbel_statistical_sectors.geojson from https://statbel.fgov.be/en/open-data/statistical-sectors
+Tool: https://mapshaper.org/
+Operations: 
+- import + check snap option
+- console: 
+		dissolve CD_MUNTY_REFNIS
+- simplify 15%
+- repair
+- console: 
+		rename-fields NIS5=CD_MUNTY_REFNIS
+		mapshaper -o be-municip-lamberts.geo.json precision=0.0001
+Size: 2.2Mb
+
+
+
+
+----------------
+
+# LINKS
+
+- http://www.atlas-belgique.be/cms2/index.php?page=cartodata_fr
+- https://ec.europa.eu/eurostat/web/gisco/geodata/reference-data/administrative-units-statistical-units/nuts#nuts16
 
 
 ----------------
