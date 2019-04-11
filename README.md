@@ -26,13 +26,8 @@ Format: JavaScript
 Geographic coordinate system: Belgian Lambert 72  
 Density: 729 points
 
-## src/sh_statbel_statistical_sectors.geojson
-Src: https://statbel.fgov.be/en/open-data/statistical-sectors
-Size: 136Mb
-Format: geojson 
-
 ## dist/polygons/be-municip-lamberts.geo.json
-Src: sh_statbel_statistical_sectors.geojson
+Src: sh_statbel_statistical_sectors.geojson from https://statbel.fgov.be/en/open-data/statistical-sectors
 Tool: https://mapshaper.org/
 Operations: 
 - import + check snap option
